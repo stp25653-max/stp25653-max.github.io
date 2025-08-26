@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แนะนำตัว: กฤษณา ดอมไธสง</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffe6f2; /* ชมพูอ่อนน่ารัก */
+            color: #4a4a4a;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff0f5; /* ชมพูอ่อนกว่า */
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            background-color: #ffc2d1; /* ชมพูเข้มขึ้น */
+            padding: 20px;
+            border-radius: 15px 15px 0 0;
+        }
+
+        h1, h2 {
+            color: #e83e8c; /* ชมพูสดใส */
+            font-family: 'Comic Sans MS', cursive, sans-serif; /* ฟอนต์น่ารักๆ */
+        }
+
+        nav {
+            background-color: #ffb3c6; /* ชมพูอ่อน */
+            padding: 10px 0;
+            border-radius: 0 0 15px 15px;
+        }
+
+        nav a {
+            color: #8c1e4d; /* สีม่วงอมชมพู */
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 15px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #d1225e; /* สีชมพูเข้ม */
+        }
+
+        .page-section {
+            display: none;
+            padding: 20px;
+            border-top: 2px dashed #ff8fab; /* เส้นประน่ารัก */
+        }
+
+        .page-section.active {
+            display: block;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #ff8fab;
+            margin-bottom: 15px;
+        }
+
+        .card {
+            background-color: #fff5e6; /* ครีม-ส้มอ่อน */
+            border: 1px solid #ffcc99;
+            border-radius: 10px;
+            padding: 15px;
+            margin-top: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+        
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            padding: 5px;
+            margin-bottom: 5px;
+            background-color: #f7e6ff; /* ม่วงอ่อน */
+            border-radius: 5px;
+        }
+
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #ffc2d1;
+            border-radius: 15px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>สวัสดีครับ/ค่ะ! 😊</h1>
+        </header>
+        
+        <nav>
+            <a href="#about" onclick="showPage('about')">เกี่ยวกับฉัน</a>
+            <a href="#interests" onclick="showPage('interests')">ความสนใจ</a>
+            <a href="#education" onclick="showPage('education')">การศึกษา</a>
+            <a href="#hobby" onclick="showPage('hobby')">งานอดิเรก</a>
+            <a href="#contact" onclick="showPage('contact')">ติดต่อ</a>
+        </nav>
+
+        <div id="about" class="page-section active">
+            <h2>เกี่ยวกับฉัน</h2>
+            <p>สวัสดีค่ะ ชื่อ <strong>กฤษณา ดอมไธสง</strong> ชื่อเล่น <strong>หนูนา</strong> ค่ะ ยินดีที่ได้รู้จักทุกคนนะคะ! 👋</p>
+        </div>
+
+        <div id="interests" class="page-section">
+            <h2>ความสนใจ</h2>
+            <div class="card">
+                <h3>💻 คอมพิวเตอร์และโปรแกรมมิ่ง</h3>
+                <p>หนูนาสนใจเรื่องที่เกี่ยวกับคอมพิวเตอร์มากๆ เลยค่ะ โดยเฉพาะการเขียนโปรแกรม รู้สึกสนุกกับการได้สร้างอะไรใหม่ๆ ด้วยตัวเองค่ะ</p>
+            </div>
+        </div>
+
+        <div id="education" class="page-section">
+            <h2>การศึกษา</h2>
+            <div class="card">
+                <p>ปัจจุบันกำลังศึกษาอยู่ที่โรงเรียน <strong>สุรธรรมพิทักษ์</strong> ค่ะ 📚</p>
+            </div>
+        </div>
+
+        <div id="hobby" class="page-section">
+            <h2>งานอดิเรก</h2>
+            <div class="card">
+                <h3>🥁 การตีกลอง</h3>
+                <p>งานอดิเรกที่ชอบที่สุดคือการตีกลองค่ะ การได้ปลดปล่อยพลังไปกับเสียงดนตรีทำให้รู้สึกผ่อนคลายและมีความสุขมากๆ เลย</p>
+            </div>
+        </div>
+
+        <div id="contact" class="page-section">
+            <h2>ช่องทางการติดต่อ</h2>
+            <div class="card">
+                <ul>
+                    <li><strong>อีเมล:</strong> (ใส่ที่อยู่อีเมลของคุณที่นี่)</li>
+                    <li><strong>โซเชียลมีเดีย:</strong> (ใส่ลิงก์โซเชียลมีเดียของคุณที่นี่)</li>
+                </ul>
+                <p>สามารถติดต่อพูดคุยกันได้เลยนะคะ! 😊</p>
+            </div>
+        </div>
+        
+        <footer>
+            <p>&copy; 2025 กฤษณา ดอมไธสง | ขอบคุณที่เข้ามาเยี่ยมชมนะคะ! ❤️</p>
+        </footer>
+
+    </div>
+
+    <script>
+        function showPage(pageId) {
+            // ซ่อนทุกหน้า
+            const sections = document.querySelectorAll('.page-section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            // แสดงหน้าที่ต้องการ
+            const activeSection = document.getElementById(pageId);
+            activeSection.classList.add('active');
+        }
+
+        // แสดงหน้าแรกเมื่อโหลดครั้งแรก
+        document.addEventListener('DOMContentLoaded', () => {
+            showPage('about');
+        });
+    </script>
+
+</body>
+</html>
